@@ -585,7 +585,7 @@ Let's try Shackle one more time.
         shackle-default-size 0.4
         shackle-rules '((help-mode           :align below :select t)
                         (helpful-mode        :align below)
-                        (dired-mode          :ignore t)
+               ;;         (dired-mode          :ignore t)
 
                         (compilation-mode    :select t   :size 0.25)
                         ("*compilation*"     :select nil :size 0.25)
@@ -1122,4 +1122,12 @@ Store custom-file separately, don't freak out when it's not found.
 #+BEGIN_SRC emacs-lisp
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
+#+END_SRC
+
+* Steve
+
+#+BEGIN_SRC emacs-lisp
+(setq mac-command-modifier 'meta) ;; default = 'meta
+(setq mac-option-modifier 'super) ;; default = none
+;; (setq mac-function-modifier 'hyper)
 #+END_SRC
